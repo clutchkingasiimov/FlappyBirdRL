@@ -7,7 +7,7 @@ import os, sys
 import gym
 import time
 import numpy as np
-from trainer import run_sarsa, run_qlearning
+from agents.trainer import run_sarsa, run_qlearning
 import text_flappy_bird_gym
 
 # #SARSA
