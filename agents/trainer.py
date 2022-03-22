@@ -100,7 +100,7 @@ def run_qlearning(env,alpha,gamma,epsilon,episodes):
             os.system("clear")
             sys.stdout.write(env.render())
             print(f'Episode {i}')
-            print('Q-Learing')
+            print('Q-Learning')
             time.sleep(0.0) # FPS
 
             # If player is dead break
