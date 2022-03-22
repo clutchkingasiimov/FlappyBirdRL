@@ -1,4 +1,3 @@
-
 from agents.QLearning import QLearning 
 from agents.sarsa import SARSA
 import os, sys
@@ -109,7 +108,7 @@ def run_qlearning(env,alpha,gamma,epsilon,episodes):
                 ql.agent_end(reward)
                 break
 
-        env.reset()
+        env.reset() 
         score_per_episode.append(info['score']) #Save the scores 
         reward_per_episode.append(reward_episode) #Save the rewards 
         episode_length.append(length_ep) #Save the episodes 

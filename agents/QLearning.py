@@ -4,7 +4,7 @@ class QLearning:
     '''
     Q-Learning algorithm with epsilon-greedy policy.
 
-
+`
     Parameters:
         actions: The action space of the agent 
         alpha: The step size for the model 

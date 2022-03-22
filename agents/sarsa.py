@@ -1,14 +1,4 @@
-import os, sys
-import gym
-import time
-import matplotlib.pyplot as plt 
 import numpy as np
-
-import text_flappy_bird_gym
-import json
-import pandas as pd
-
-
 class SARSA:
     '''
     SARSA algorithm with epsilon-decay mechanic. 
@@ -114,7 +104,6 @@ class SARSA:
         return self.prev_action
     
     def agent_end(self,reward):
-        
         target_update = reward
         Q_prev = self.Q_table[self.prev_state][self.prev_action] #Take the Q-value from the 
         Q_prev += self.alpha*(target_update - Q_prev)
