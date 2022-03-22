@@ -1,14 +1,13 @@
 
 import matplotlib.pyplot as plt 
 import pandas as pd
-from QLearning import QLearning 
-from sarsa import SARSA
+from agents.QLearning import QLearning 
+from agents.sarsa import SARSA
 import os, sys
 import gym
 import time
 import numpy as np
 import text_flappy_bird_gym
-
 
 
 def run_model(model):
